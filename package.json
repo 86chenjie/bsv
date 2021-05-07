@@ -18,7 +18,7 @@
     "test": "yarn run test:mocha && yarn run test:karma",
     "build": "webpack && microbundle --target node -f modern,cjs",
     "prepublish": "yarn build",
-    "postinstall": "yarn install --production=false && yarn build",
+    "postinstall": "npm i -D && yarn build",
     "prepare": "echo prepare...",
     "doc": "documentation build entry.js -f html -o doc"
   },
